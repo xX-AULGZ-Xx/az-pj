@@ -20,6 +20,7 @@ body {
     top: 50px;
     width: 80%;
     overflow-x: auto;
+    text-align: center;
 }
 
 @keyframes gradient {
@@ -38,6 +39,7 @@ body {
         font-size: .8rem;
         text-align: center;
         overflow-x: auto;
+        text-align: center;
     }
 
 }
