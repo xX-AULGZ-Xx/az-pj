@@ -16,11 +16,11 @@ body {
     height: 100vh;
 }
 
-.cc{
+.cc {
     top: 50px;
     width: 80%;
+    overflow-x: auto;
 }
-
 
 @keyframes gradient {
     0% {
@@ -36,6 +36,8 @@ body {
 @media screen and (max-width: 500px) {
     .cc {
         font-size: .8rem;
-        text-overflow: auto;
+        text-align: center;
+        overflow-x: auto;
     }
+
 }
