@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NodeJs</title>
+</head>
+<body>
+    <table width = "80%" border = "1" align="center">
+        <thead>
+            <th>Id</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+        </thead>
+        <tbody>
+            <% if (resultsPerson.length > 0) { %>
+                <% resultsPerson.forEach (function(recordPerson) { %>
+                    <tr>
+                        <td>
+                            <%= recordPerson.id %>
+                        </td>
+                        <td>
+                            <%= recordPerson.fname %>
+                        </td>
+                        <td>
+                            <%= recordPerson.lname %>
+                        </td>
+                    </tr>
+                <% }) %>
+            <% } else { %>
+                <tr>
+                    <td colspan = "100%">- ไม่มีข้อมูล -</td>
+                </tr>
+            <% } %>
+        </tbody>
+    </table>
+</body>
+</html>
